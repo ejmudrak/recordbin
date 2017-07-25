@@ -50,19 +50,37 @@ p, a {
     margin-left: 1em;
 }
 
+.recordImageContainer {
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.recordImage {
+    float: right;
+    margin-right: 2em;
+    margin-top: -9em;
+    animation: spin 3s infinite linear;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+
 .binContainer {
-    display: block;
-    /*margin: auto;*/
-    margin-left: 22rem;
+    width: 100%;
 }
 
 .binFront {
-    width: 50rem;
-    height: 10rem;
+    display: block;
+    margin: auto;
+    width: 92%;
+    height: 8em;
     z-index: 3;
 
-    position: absolute;
-    bottom: 2rem;
+    position: relative;
+    top: 17.5em;
 
     border-radius: 3px;
     background-color: #fff;
@@ -72,13 +90,12 @@ p, a {
 .binBack {
     display: block;
     margin: auto;
-    width: 48em;
-    margin-left: 1em;
+    width: 90%;
     height: 20em;
     z-index: 1;
 
-    position: absolute;
-    bottom: 11.75rem;
+    position: relative;
+    bottom: 7.5em;
 
     border-radius: 3px;
     background-color: #f2f2f2;
@@ -90,17 +107,31 @@ p, a {
 }
 
 .records {
+    margin-top: 2em;
     position: relative;
     z-index: 2;
-    top: 6em;
-    left: 6.5em;
-
+    display: flex;
+    justify-content: flex-start;
 }
 
 .album {
-    margin-right: 7.5em;
-    width: 15em;
+    /*padding: 1em;*/
+    margin: 1.5em;
+    width: 14em;
+    height: 14em;
     box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 6px 6px rgba(0,0,0,0.25);
+
+    transition: margin-top 0.5s, width 0.5s, height 0.5s;
+    transition-timing-function: ease;
+}
+
+.album:hover {
+    margin-top: -1em;
+}
+
+.album:active {
+    width: 16em;
+    height: 16em;
 }
 
 

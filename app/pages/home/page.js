@@ -18,6 +18,7 @@ import IconButton from 'material-ui/IconButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
+
 /* -------------------- Home - MAIN COMPONENT ----------------------- */
 
 export default class Home extends React.Component {  
@@ -31,6 +32,9 @@ export default class Home extends React.Component {
       <div className={styles.container}>
         <AppBar />
         <div className={styles.heading}>Your Record Bin</div>
+        <div className={styles.recordImageWrapper}>
+          <img className={styles.recordImage} src="../../assets/record.png" />
+        </div>
         <Bin />
       </div>
     );
@@ -64,11 +68,14 @@ class Bin extends React.Component {
       <div className={styles.binContainer} > 
         <div className={styles.binFront}>  
         </div>        
-        <div className={styles.binBack}>  
-        </div>
-        <div className={styles.records}>
-          <img className={styles.album} src="../../assets/chance.png" />
-          <img className={styles.album} src="../../assets/paak.png" />
+        <div className={styles.binBack}> 
+          <div className={styles.records}>
+            <img className={styles.album} src="../../assets/chance.png" />
+            <img className={styles.album} src="../../assets/kanye.jpg" />
+            <img className={styles.album} src="../../assets/paak.png" />
+            <img className={styles.album} src="../../assets/frank.jpg" />
+            <img className={styles.album} src="../../assets/glass_animals.jpg" />
+          </div> 
         </div>
       </div>
     );

@@ -1,5 +1,5 @@
 {
-  "name": "Record Bin",
+  "name": "recordbin",
   "description": "A web application for musical storytelling",
   "scripts": {
     "start": "node_modules/.bin/webpack-dev-server --progress --colors --content-base app --port 8080",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrewellis51/savvySamaritans.git"
+    "url": "https://github.com/ejmudrak/recordbin"
   },
   "dependencies": {
     "material-ui": "^0.17.0",
