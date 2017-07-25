@@ -1,0 +1,13 @@
+{
+  "name": "Record Bin",
+  "icons": [
+    {
+      "src": "/assets/G.png",
+      "sizes": "36x36"
+    }
+  ],
+
+  "start_url": "index.html",
+  "display": "standalone",
+  "orientation": "portrait"
+}

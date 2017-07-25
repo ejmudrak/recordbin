@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Righteous|Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Lato|Palanquin+Dark|Slabo+27px');
+
+@font-face {
+  font-family: 'Galano';
+  src: url('/assets/fonts/Galano Grotesque DEMO Bold.otf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    margin-top: 0em;
+}
+
+
+/* ------- React class stylings ------ */
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+.appBar {
+    margin: 2em;
+    margin-bottom: 1em;
+}
+
+.barItem {
+    font-size: 1.25em;
+    font-family: 'Galano';
+    text-decoration: none;
+    color: #7a21ff;
+    margin-left: 1.5em;
+}
+
+.logo {
+    width: 4rem;
+}
+
+.heading {
+    font-family: 'Galano';
+    color: #7a21ff;
+    font-size: 4em;
+    margin-left: 1em;
+}
+
+.binContainer {
+    display: block;
+    /*margin: auto;*/
+    margin-left: 22rem;
+}
+
+.binFront {
+    width: 50rem;
+    height: 10rem;
+    z-index: 3;
+
+    position: absolute;
+    bottom: 2rem;
+
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.binBack {
+    display: block;
+    margin: auto;
+    width: 48em;
+    margin-left: 1em;
+    height: 20em;
+    z-index: 1;
+
+    position: absolute;
+    bottom: 11.75rem;
+
+    border-radius: 3px;
+    background-color: #f2f2f2;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.binSide {
+
+}
+
+.records {
+    position: relative;
+    z-index: 2;
+    top: 6em;
+    left: 6.5em;
+
+}
+
+.album {
+    margin-right: 7.5em;
+    width: 15em;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.45), 0 6px 6px rgba(0,0,0,0.25);
+}
+
+
+/* Styling for responsiveness */ 
+@media (max-device-width: 1000px){
+
+}
+
+
+
