@@ -18,17 +18,18 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.jsx?$/,      
+        test: /\.jsx?$/,
         loader: 'babel-loader',
         include: path.resolve(__dirname, "app") // must be fully qualified file path
       },
       {
         test: /\.css$/,
-        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]' 
+        loader: 'style!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
       },
       { test: /\.json$/, loader: 'json-loader' },
       { test: /\.md$/, loader: 'markdown-loader' },
-      { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" }
+      // { test: /\.svg$/, loader: "url-loader?limit=10000&mimetype=image/svg+xml" },
+      { test: /\.(png|.svg|jpg|ico|bmp)$/, loader: 'url-loader?limit=100000' }
     ],
   },
     resolve: {

@@ -16,9 +16,8 @@ p, a {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 500;
-    margin-top: 0em;
+    margin-top: 0;
 }
-
 
 /* ------- React class stylings ------ */
 
@@ -26,9 +25,47 @@ p, a {
     width: 100%;
     height: 100%;
 }
+
+.backgroundImage {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  filter: grayscale(1) contrast(200%);
+}
+
+.overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #7a21ff, #7a21ff);
+  opacity: 0.65;
+}
+
+.midCard {
+  width: 60%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  background-color: #fff;
+
+  /* clip path: TL, TR, BR, BL order. W x H */
+
+  /* right side */
+  -webkit-clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(20% 0, 100% 0%, 100% 100%, 0% 100%);
+
+  /* left side */
+  /*-webkit-clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 80% 0%, 100% 100%, 0% 100%);*/
+}
+
 .appBar {
     margin: 2em;
-    margin-bottom: 1em;
+    margin-top: 0;
 }
 
 .barItem {
@@ -36,16 +73,19 @@ p, a {
     font-family: 'Galano';
     text-decoration: none;
     color: #7a21ff;
-    margin-left: 1.5em;
+    color: #fff;
+    margin-left: 3em;
 }
 
 .logo {
     width: 4rem;
+    margin-top: 2em;
 }
 
 .heading {
     font-family: 'Galano';
     color: #7a21ff;
+    color: #fff;
     font-size: 4em;
     margin-left: 1em;
 }
@@ -60,7 +100,9 @@ p, a {
     float: right;
     margin-right: 2em;
     margin-top: -9em;
-    animation: spin 3s infinite linear;
+    animation: spin 5s infinite linear;
+    border-radius: 100%;
+    box-shadow: 0px 0px 100px 1px #888888;
 }
 
 @keyframes spin {
@@ -85,6 +127,11 @@ p, a {
     border-radius: 3px;
     background-color: #fff;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    background-image: url('../../assets/wood3.jpg');
+    background-size: cover;
+    background-position: center;
+    transform: rotate(180deg);
 }
 
 .binBack {
@@ -100,6 +147,12 @@ p, a {
     border-radius: 3px;
     background-color: #f2f2f2;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+
+    background-image: url('../../assets/wood3.jpg');
+    background-size: cover;
+    background-position: center;
+
+
 }
 
 .binSide {
@@ -135,10 +188,7 @@ p, a {
 }
 
 
-/* Styling for responsiveness */ 
+/* Styling for responsiveness */
 @media (max-device-width: 1000px){
 
 }
-
-
-
