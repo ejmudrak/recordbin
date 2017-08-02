@@ -18,9 +18,15 @@ import IconButton from 'material-ui/IconButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import TextField from 'material-ui/TextField';
 
+import { Button } from 'semantic-ui-react';
+
 import RecordStore from '../../assets/rs3.jpg';
 import Record from '../../assets/record.png';
 import Logo from '../../assets/logo.png';
+
+// import RecordStore from './rs3.jpg';
+// import Record from './record.png';
+// import Logo from './logo.png';
 
 
 /* -------------------- Home - MAIN COMPONENT ----------------------- */
