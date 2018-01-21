@@ -10,13 +10,15 @@
 html, body {
     margin: 0;
     padding: 0;
+    max-width: 100%;
+    /*overflow-x: hidden; */
 }
 
 p, a {
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: 500;
-    margin-top: 0;
+    /*margin-top: 0;*/
 }
 
 /* ------- React class stylings ------ */
@@ -40,7 +42,8 @@ p, a {
   width: 100%;
   position: absolute;
   z-index: -1;
-  background-image: linear-gradient(to bottom, #7a21ff, #7a21ff);
+  /*background-image: linear-gradient(to bottom, #7a21ff, #7a21ff);*/
+  background-image: linear-gradient(to bottom, #6600ff, #6600ff);
   opacity: 0.65;
 }
 
@@ -51,6 +54,7 @@ p, a {
   z-index: -1;
   right: 0;
   background-color: #fff;
+  opacity: 0.97;
 
   /* clip path: TL, TR, BR, BL order. W x H */
 
@@ -66,7 +70,7 @@ p, a {
 .appBar {
     margin: 2em;
     margin-top: 0;
-}
+  }
 
 .barItem {
     font-size: 1.25em;
@@ -75,11 +79,15 @@ p, a {
     color: #7a21ff;
     color: #fff;
     margin-left: 3em;
+
+    position: relative;
+    top: -1.5em;
+
 }
 
 .logo {
     width: 4rem;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .heading {
@@ -112,6 +120,7 @@ p, a {
 
 .binContainer {
     width: 100%;
+    margin-top: 5em;
 }
 
 .binFront {
@@ -119,9 +128,9 @@ p, a {
     margin: auto;
     width: 92%;
     height: 8em;
-    z-index: 3;
 
     position: relative;
+    z-index: 10;
     top: 17.5em;
 
     border-radius: 3px;
@@ -139,9 +148,9 @@ p, a {
     margin: auto;
     width: 90%;
     height: 20em;
-    z-index: 1;
 
     position: relative;
+    z-index: 1;
     bottom: 7.5em;
 
     border-radius: 3px;
@@ -161,14 +170,16 @@ p, a {
 
 .records {
     margin-top: 2em;
+    margin-left: 5em;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     display: flex;
     justify-content: flex-start;
 }
 
 .album {
     /*padding: 1em;*/
+    border-radius: 5px;
     margin: 1.5em;
     width: 14em;
     height: 14em;
@@ -185,6 +196,30 @@ p, a {
 .album:active {
     width: 16em;
     height: 16em;
+}
+
+/* ------------ Current Album Styles ----------- */
+
+.currentAlbumContainer {
+  position: absolute;
+  z-index: 3;
+  top: -9.5em;
+  left: 0;
+  right: 0;
+  left: -6em;
+  width: 97.5rem;
+  height: 85vh;
+  display: block;
+  margin: auto;
+
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.closeButton {
+    float: right;
+    margin: 2em;
 }
 
 
